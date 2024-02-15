@@ -39,20 +39,19 @@ function loadQues() {
     option = option.replace(/&quot;/g, '"').replace(/&#039;/g, "'");
     const choicesdiv = document.createElement("div");
     const choice = document.createElement("input");
-    const choiceLabel = document.createElement("label"); // Wrap the radio input and option text with label
+    const choiceLabel = document.createElement("label"); 
 
     choice.type = "radio";
     choice.name = "answer";
     choice.value = option;
-    choice.id = option; // Assign a unique id to each radio input
+    choice.id = option; 
 
     choiceLabel.textContent = option;
 
-    // Link the label to the radio button with the "for" attribute
-    choiceLabel.setAttribute("for", option); // Use the id of the corresponding radio input
+    choiceLabel.setAttribute("for", option); 
 
     choicesdiv.appendChild(choiceLabel);
-    choicesdiv.appendChild(choice); // Append the radio input to the label
+    choicesdiv.appendChild(choice); 
     opt.appendChild(choicesdiv);
   });
 }
