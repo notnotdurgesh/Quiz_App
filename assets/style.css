@@ -1,0 +1,91 @@
+body {
+    background-color: #1ba9fc; /* Light blue */
+    color: #222; /* Dark text */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #8fc6eb; /* Dark blue */
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  .panel {
+    background-color: #8fc6eb; /* Dark blue */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .border {
+    width: 95%;
+    height:95%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+
+
+  }
+  .question {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff; /* White text */
+    background-color: #081164;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .options div {
+    padding: 10px;
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .options div:hover {
+    background-color: #e0f2f1; /* Lighter blue on hover */
+  }
+
+  .button{
+    text-align: right;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #9b59b6; /* Purple */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #8e44ad; /* Darker purple on hover */
+  }
+  
+  #score {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #222; /* Dark text */
+  }
+  
